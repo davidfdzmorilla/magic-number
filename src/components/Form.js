@@ -4,8 +4,9 @@ export const Form = ({ min, max, setSolution, number, setNumber, setError }) => 
 
   const handleSubmit = async e => {
     e.preventDefault()
+    if (!number) return
     let result = await guessNumber(min, max, Number(number))
-    if (result === -1) {
+    if (result < min) {
       setError('Number not found.')
     }
     setSolution(result)
@@ -18,7 +19,16 @@ export const Form = ({ min, max, setSolution, number, setNumber, setError }) => 
   return (
     <form onSubmit={handleSubmit}>
       <label>Introduce un número entre {min} y {max}.</label>
-      <input value={number} min={min} max={max} onChange={handleChange} type='number' placeholder='Introduce un número' />
+      <input
+        value={number}
+        min={min}
+        max={max}
+        onChange={handleChange}
+        type='number'
+        required
+        autoFocus
+        placeholder='Escribe aquí. Ej. 96746'
+      />
       <input type='submit' value='Enviar' />
     </form>
   )

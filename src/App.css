@@ -66,15 +66,22 @@ form input[type=number] {
 
 form input[type=submit],
 .reset {
-  padding: .5rem;
+  padding: .7rem;
   width: 100px;
   align-self: center;
   border: none;
   border-radius: 5px;
   background-color: var(--primary-color);
-  color: var(--letter-color);
+  color: var(--secondary-color);
   font-weight: bolder;
   cursor: pointer;
+}
+
+form input[type=submit]:hover,
+.reset:hover,
+a:hover {
+  filter: saturate(5);
+  transition: all 300ms;
 }
 
 .solution,
