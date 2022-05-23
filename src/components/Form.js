@@ -1,4 +1,6 @@
+
 import guessNumber from '../utils/guessNumber'
+
 
 export const Form = ({ min, max, setSolution, number, setNumber, setError }) => {
 
@@ -32,4 +34,5 @@ export const Form = ({ min, max, setSolution, number, setNumber, setError }) => 
       <input type='submit' value='Enviar' />
     </form>
   )
+
 }

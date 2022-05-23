@@ -24,16 +24,16 @@ test('guessNumber(1, 10000000000, 4756) returns 4756', () => {
   expect(guessNumber(1, 10000000000, 4756)).toBe(4756)
 })
 
-test('guessNumber(1, 10000000000, 50000) returns 50000', () => {
-  expect(guessNumber(1, 10000000000, 50000)).toBe(50000)
-})
-
 test('guessNumber(1, 10000000000, 653785) returns 653785', () => {
   expect(guessNumber(1, 10000000000, 653785)).toBe(653785)
 })
 
 test('guessNumber(1, 10000000000, 7564935) returns 7564935', () => {
   expect(guessNumber(1, 10000000000, 7564935)).toBe(7564935)
+})
+
+test('guessNumber(1, 10000000000, 5000000000) returns 5000000000', () => {
+  expect(guessNumber(1, 10000000000, 5000000000)).toBe(5000000000)
 })
 
 test('guessNumber(1, 10000000000, 9999999999) returns 9999999999', () => {

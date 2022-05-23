@@ -1,25 +1,24 @@
 
 import { useState } from 'react'
-import './App.css'
+
 import { Explanation } from './components/Explanation'
+import { ResetButton } from './components/ResetButton'
 import { Footer } from './components/Footer'
-import { Form } from './components/Form'
 import { Header } from './components/Header'
+import { Form } from './components/Form'
+
+import './App.css'
+
 
 function App() {
 
+  //Default values//
   const min = 1
   const max = 10000000000
 
-  const [number, setNumber] = useState('')
+  const [number, setNumber] = useState(null)
   const [error, setError] = useState('')
   const [solution, setSolution] = useState('')
-
-  const handleReset = () => {
-    setNumber('')
-    setSolution('')
-    setError('')
-  }
 
 
   return (
@@ -38,13 +37,16 @@ function App() {
         {solution && solution > 0 &&
           <>
             <span className='solution'>{solution}</span>
-            <button className='reset' onClick={handleReset}>Reset</button>
+            <ResetButton
+              setSolution={setSolution}
+              setError={setError}
+              setNumber={setNumber}
+            />
           </>
         }
         {error &&
           <>
             <span className='error'>{error}</span>
-            <button className='reset' onClick={handleReset}>Reset</button>
           </>}
       </main>
       <Footer />

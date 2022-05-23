@@ -1,7 +1,9 @@
+
 import { FaGithubSquare, FaLinkedin } from 'react-icons/fa'
 
 
 export const Footer = () => {
+
   return (
     <footer>
       <div />
@@ -12,4 +14,5 @@ export const Footer = () => {
       </div>
     </footer>
   )
+
 }
