@@ -7,7 +7,7 @@ Crear una una aplicación web con un formulario en el que se pueda introducir un
 - La aplicación hará una comprobación matemática con otros números para poder adivinar el resultado final (ver ejemplo).
 - La aplicación deberá calcular el resultado de la forma más rápida y eficiente posible.
 
-Un ejemplo de cómo calcular el número de un modo nada eficiente y, por tanto, no correcta:\
+Un ejemplo de cómo calcular el número de un modo nada eficiente y, por tanto, no correcta:
 
 
 const min = 1\
