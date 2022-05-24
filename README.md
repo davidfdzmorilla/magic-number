@@ -9,10 +9,10 @@ Crear una una aplicación web con un formulario en el que se pueda introducir un
 
 Un ejemplo de cómo calcular el número de un modo nada eficiente y, por tanto, no correcta:
 
-for (let i = 1; i <= 10000000000; i++) {
-        if(i === valorintroducido){
-            return i;
-        }
+for (let i = 1; i <= 10000000000; i++) {\
+        if(i === valorintroducido){\
+            return i;\
+        }\
 }
 
 
