@@ -11,7 +11,7 @@ Un ejemplo de cómo calcular el número de un modo nada eficiente y, por tanto, 
 
 
 const min = 1\
-const max = 10000000000\
+const max = 10000000000
 
 for (let i = min; i <= max; i++) {\
         if(i === valorintroducido){\
