@@ -17,7 +17,7 @@ const guessNumber = (min, max, number) => {
     /*Condicion de que mitad es mayor a n*/
     if (middle > number) {
 
-      /*Vuelvo a ejecutar la función con middle -1 porque middle ya está comprobado y quiero seguir comprobando para abajo*/
+      /*Vuelvo a ejecutar la función con middle -1*/
       return guessNumber(min, middle - 1, number)
     }
 
