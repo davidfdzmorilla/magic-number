@@ -16,7 +16,7 @@ function App() {
   const min = 1
   const max = 10000000000
 
-  const [number, setNumber] = useState(null)
+  const [number, setNumber] = useState('')
   const [error, setError] = useState('')
   const [solution, setSolution] = useState('')
 

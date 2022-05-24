@@ -143,3 +143,22 @@ footer a.link-portfolio {
   font-size: 1.5rem;
   font-family: 'Trispace', sans-serif;
 }
+
+.image {
+  width: 20%;
+  display: none;
+  position: fixed;
+  border-radius: 10px;
+  left: 50%;
+  margin-top: 30px;
+}
+
+.algoritmo {
+  text-decoration: underline;
+}
+
+@media (min-width: 800px) {
+  .algoritmo:hover .image {
+    display: inline;
+  }
+}
